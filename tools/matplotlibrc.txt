@@ -1,0 +1,35 @@
+backend : Qt5Agg
+
+text.usetex : True
+
+font.size        : 10.0
+axes.titlesize   : 10.0  # Font size of title
+axes.titlepad    : 6.0
+axes.labelsize   : 10.0  # Axes label sizes
+axes.labelpad    : 4.0
+xtick.labelsize  : 9.0
+ytick.labelsize  : 9.0
+
+#axes.spines.left     : True
+#axes.spines.right    : True
+#axes.spines.bottom   : True
+#axes.spines.top      : True
+
+figure.figsize : 5.293695, 3.32031611
+figure.subplot.left     : 0.12593597
+figure.subplot.right    : 0.87406402
+figure.subplot.bottom   : 0.15058807
+figure.subplot.top      : 0.94980398
+
+#figure.figsize         : 3.176217, 2.281315119  # linewidth is 7.05826
+#figure.subplot.left    : 0.1311833
+#figure.subplot.right   : 0.8688167
+#figure.subplot.top     : 0.8173568118080021
+#figure.subplot.bottom  : 0.1826431881919979
+
+#savefig.format     : pdf
+#savefig.bbox       : tight
+#savefig.pad_inches : 0.1
+
+#pdf.compression : 6
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+## Script for PI cluster symmetry:
+#SBATCH --partition=debugq
+#SBATCH --time=1:00:00
+#SBATCH --nodes=1
+#SBATCH -J vcavbub
+
+module load jupyter
+module load python/3.7
+
+jupyter nbconvert --execute averageVacBubble.ipynb --ExecutePreprocessor.timeout=-1

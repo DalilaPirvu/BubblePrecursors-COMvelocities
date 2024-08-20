@@ -1,0 +1,13 @@
+#!/bin/bash
+## Script for PI cluster symmetry:
+#SBATCH --partition=debugq
+#SBATCH --nodes=1
+#SBATCH --tasks=1
+#SBATCH --cpus-per-task=40
+#SBATCH --time=1:00:00
+#SBATCH -J vctr
+
+python3 triage_vac.py >> ./data/output_triage.txt
+
+print('Done')
+

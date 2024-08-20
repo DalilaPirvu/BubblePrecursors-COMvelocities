@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --partition=debugq
+#SBATCH --nodes=1
+#SBATCH --tasks=1
+#SBATCH --cpus-per-task=40
+#SBATCH --time=1:00:00
+#SBATCH -J trig
+#SBATCH --output=./out/slurm-%j.out
+###SBATCH --mail-user=dpirvu@perimeterinstitute.ca
+
+python3 ./out/triage_apples.py >> ./out/output_triage.txt &
+wait
+
+print('Done')
+

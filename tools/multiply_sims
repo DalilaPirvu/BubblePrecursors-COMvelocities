@@ -1,0 +1,123 @@
+scp -r ./w ./ww
+scp -r ./w ./www
+scp -r ./w ./wwww
+scp -r ./w ./wwwww
+scp -r ./w ./wwwwww
+scp -r ./w ./wwwwwww
+scp -r ./w ./wwwwwwww
+scp -r ./w ./wwwwwwwww
+scp -r ./w ./wwwwwwwwww
+scp -r ./w ./w1
+scp -r ./w ./ww1
+scp -r ./w ./www1
+scp -r ./w ./wwww1
+scp -r ./w ./wwwww1
+scp -r ./w ./wwwwww1
+scp -r ./w ./wwwwwww1
+scp -r ./w ./wwwwwwww1
+scp -r ./w ./wwwwwwwww1
+scp -r ./w ./wwwwwwwwww1
+
+cd w
+sbatch batch
+cd ..
+
+cd ww
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2050, nSim = 2100/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd www
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2100, nSim = 2150/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwww
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2150, nSim = 2200/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwww
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2200, nSim = 2250/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwww
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2250, nSim = 2300/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwwww
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2300, nSim = 2350/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwwwww
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2350, nSim = 2400/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwwwwww
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2400, nSim = 2450/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwwwwwww
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2450, nSim = 2500/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+
+
+
+
+cd w1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2500, nSim = 2550/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd ww1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2550, nSim = 2600/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd www1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2600, nSim = 2650/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwww1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2650, nSim = 2700/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwww1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2700, nSim = 2750/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwww1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2750, nSim = 2800/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwwww1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2800, nSim = 2850/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwwwww1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2850, nSim = 2900/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwwwwww1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2900, nSim = 2950/g' evolve-scalar.f90
+sbatch batch
+cd ..
+
+cd wwwwwwwwww1
+perl -i.bak -pe 's/lSim = 2000, nSim = 2050/lSim = 2950, nSim = 3000/g' evolve-scalar.f90
+sbatch batch
+cd ..
+

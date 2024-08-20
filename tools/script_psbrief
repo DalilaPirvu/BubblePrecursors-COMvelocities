@@ -1,0 +1,35 @@
+#!/bin/bash
+## Script for PI cluster symmetry:
+#SBATCH --partition=debugq
+#SBATCH --nodes=2
+#SBATCH --tasks=20
+#SBATCH --time=1:00:00
+#SBATCH --cpus-per-task=8
+#SBATCH --ntasks-per-node=10
+#SBATCH -J thpsbrf
+
+
+python3 psbrief.py >> ./outputs/psstatus.txt &
+python3 psbrief1.py >> ./outputs/psstatus.txt &
+python3 psbrief2.py >> ./outputs/psstatus.txt &
+python3 psbrief3.py >> ./outputs/psstatus.txt &
+python3 psbrief4.py >> ./outputs/psstatus.txt &
+python3 psbrief5.py >> ./outputs/psstatus.txt &
+python3 psbrief6.py >> ./outputs/psstatus.txt &
+python3 psbrief7.py >> ./outputs/psstatus.txt &
+python3 psbrief8.py >> ./outputs/psstatus.txt &
+python3 psbrief9.py >> ./outputs/psstatus.txt &
+python3 psbrief10.py >> ./outputs/psstatus.txt &
+python3 psbrief11.py >> ./outputs/psstatus.txt &
+python3 psbrief12.py >> ./outputs/psstatus.txt &
+python3 psbrief13.py >> ./outputs/psstatus.txt &
+python3 psbrief14.py >> ./outputs/psstatus.txt &
+python3 psbrief15.py >> ./outputs/psstatus.txt &
+python3 psbrief16.py >> ./outputs/psstatus.txt &
+python3 psbrief17.py >> ./outputs/psstatus.txt &
+python3 psbrief18.py >> ./outputs/psstatus.txt &
+python3 psbrief19.py >> ./outputs/psstatus.txt &
+wait
+
+print('Done')
+

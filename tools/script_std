@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --partition=defq
+#SBATCH --nodes=1
+#SBATCH --tasks=1
+#SBATCH --cpus-per-task=80
+#SBATCH --time=24:00:00
+#SBATCH -J charges
+#SBATCH --output=./out/slurm-%j.out
+###SBATCH --mail-user=dpirvu@perimeterinstitute.ca
+
+python3 ./get_fldvar.py >> ./out/output.txt
+print('Done')
+

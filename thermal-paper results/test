@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --partition=debugq
+#SBATCH --nodes=1
+#SBATCH --tasks=1
+#SBATCH --cpus-per-task=80
+#SBATCH --time=1:00:00
+#SBATCH -J avbub
+#SBATCH --output=./out/slurm-%j.out
+###SBATCH --mail-user=dpirvu@perimeterinstitute.ca
+
+python3 ./bubbles_codes/deboost.py >> ./out/av_bubble.txt
+
+print('Done')
+

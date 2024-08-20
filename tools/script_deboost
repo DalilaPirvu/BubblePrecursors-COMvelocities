@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH --partition=defq
+#SBATCH --nodes=1
+#SBATCH --tasks=4
+#SBATCH --cpus-per-task=20
+#SBATCH --time=4:00:00
+#SBATCH -J deboost0
+#SBATCH --output=./out/slurm-%j.out
+###SBATCH --mail-user=dpirvu@perimeterinstitute.ca
+
+python3 ./out/deboost00.py >> ./out/out_deboost00.txt &
+python3 ./out/deboost01.py >> ./out/out_deboost01.txt &
+python3 ./out/deboost02.py >> ./out/out_deboost02.txt &
+python3 ./out/deboost03.py >> ./out/out_deboost03.txt &
+wait
+
+print('Done')
+
