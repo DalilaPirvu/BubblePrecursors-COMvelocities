@@ -1,2 +1,5 @@
 # BubblePrecursors-COMvelocities
- full paper analysis + tests
+
+Numerical analysis and tests for work in arXiv:2312.13364
+
+Abstract: Metastable ‘false’ vacuum states are an important feature of the Standard Model of particle physics and many theories beyond it. Describing the dynamics of a phase transition out of a false vacuum via the nucleation of bubbles is essential for understanding the cosmology of vacuum decay and the full spectrum of observables. In this paper, we study vacuum decay by numerically evolving ensembles of field theories in 1+1 dimensions from a metastable state. We demonstrate that for an initial Bose-Einstein distribution of fluctuations, bubbles form with a Gaussian spread of center-of-mass velocities and that bubble nucleation events are preceded by an oscillon - a long- lived, time-dependent, pseudo-stable configuration of the field. Defining an effective temperature from the long-wavelength amplitude of fluctuations in the ensemble of simulations, we find good agreement between theoretical finite temperature predictions and empirical measurements of the decay rate, velocity distribution and critical bubble solution. We comment on the generalization of our results and the implications for cosmological observables.
